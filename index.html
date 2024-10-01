@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aravii</title>
+    <link rel="stylesheet" href="CSS/Styles.css">
+    
+    <div style="position: absolute; top: 10px; right: 10px;">
+        <a href="https://www.instagram.com/araviimm" target="_blank">
+            <img src="Images/—Pngtree—instagram icon instagram logo_3584911.png" alt="Instagram" style="width: 30px; height: 30px; margin-left: 5px;">
+        </a>
+        <a href="mailto:aravii.mm@gmail.com" target="_blank">
+            <img src="Images/—Pngtree—email icon design_5571212.png" alt="Email" style="width: 30px; height: 30px; margin-left: 5px;">
+        </a>
+        <a href="https://www.deviantart.com/araviim" target="_blank">
+            <img src="Images/logo-deviantart-svgrepo-com.svg" alt="DeviantArt" style="width: 30px; height: 30px; margin-left: 5px;">
+        </a>
+    </div>
+    
+</head>
+<body>
+    <div class="container"></div>
+  <header>
+    <h1>Aravii</h1>
+  </header>
+<div class="button-container">
+<nav>
+    <ul>
+        <li>
+            <a href="about.html" class="button">About</a>
+        </li>
+        <li>
+            <a href="work.html" class="button">Work</a>
+        </li>
+        <li>
+            <a href="commission.html" class="button">Commission</a>
+        </li>
+        <li>
+            <a href="contact.html" class="button">Contact</a>
+        </li>
+    </ul>
+</nav>    
+</div>
+<div class="slideshow-container">
+    <img class="slides" src="Images/137d3ed5_original.jpg" style="width: 50%">
+    <img class="slides" src="Images/42ad5346_original.jpg" style="width:50%">
+    <img class="slides" src="Images/6c2a7d12_original.jpg" style="width:50%">
+    <img class="slides" src="Images/a9650f0d_original.jpg" style="width:50%">
+    <img class="slides" src="Images/img20240402_10582951.jpg" style="width:50%">
+    <img class="slides" src="Images/img20240416_10574644.jpg" style="width:50%">
+    <img class="slides" src="Images/img20240416_11013695.jpg" style="width:50%">
+    <img class="slides" src="Images/img20240416_11111478.jpg" style="width:50%">
+    <img class="slides" src="Images/img20240416_11315387.jpg" style="width:50%">
+
+</div>
+<div class="script">
+<script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("slides");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        slides[slideIndex - 1].style.display = "block";  
+        setTimeout(showSlides, 3000); // Change image every 3 seconds
+    }
+
+    function plusSlides(n) {
+        slideIndex += n - 1; // Adjust for the current slide
+        showSlides();
+    }
+</script>
+</div>
+</body>
+</html>
